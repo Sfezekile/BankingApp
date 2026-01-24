@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+  
+</head>
+<body>
+  <header>
+    <div class="left">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="user_name">
+        <h2>Clair Den</h2>
+        <p>@ClairDen</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <i class="ri-notification-2-line"></i>
+    </div>
+  </header>
+
+  <nav>
+    <a class="nav-link active">
+      <i class="ri-home-2-line"></i>
+      <!--<p>Home</p>-->
+    </a>
+    <a href="login.html" class="nav-link">
+      <i class="ri-wallet-3-line"></i>
+      <!--<p>Wallets</p>-->
+    </a>
+    <a class="nav-link">
+      <i class="ri-bar-chart-2-line"></i>
+      <!--<p>Statistics</p>-->
+    </a>
+    <a class="nav-link">
+      <i class="ri-settings-3-line"></i>
+      <!--<p>Settings</p>-->
+    </a>
+  </nav>
+
+  <main>
+    <section class="account">
+      <div class="card">
+        <p>Total Balance</p>
+        <div class="card-logo">
+          <img src="7.png" alt="">
+        </div>
+        <div class="balance">
+          <h2>R 248,450.32</h2>
+          <button class="btn unhidden-balance" style="display: block;"><i class="ri-eye-line"></i></button>
+          <button class="btn hidden-balance" style="display: none;"><i class="ri-eye-off-line"></i></button>
+        </div>
+        <div class="controls">
+          <button href="send.html" class="link">
+            <i class="ri-arrow-right-up-long-line"></i>
+            <p>Send</p>
+          </button>
+          <button class="link">
+            <i class="ri-arrow-left-down-long-line"></i>
+            <p>Request</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="transactions">
+      <div class="section-header">
+        <h2>Recent Transactions</h2>
+        <a href="#">See All</a>
+      </div>
+
+      <div class="transaction-list">
+        <div class="transaction-item">
+          <div class="left">
+            <div class="icon received">
+              <!--<i class="ri-arrow-left-down-long-line"></i>-->
+            </div>
+            <div class="details">
+              <p class="title">Salary</p>
+              <p class="date">Aug 1, 2025</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="amount received" style="color: greenyellow;">
+              +R 120,000
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="transaction-item">
+          <div class="left">
+            <div class="icon sent">
+              <!--<i class="ri-arrow-right-up-long-line"></i>-->
+            </div>
+            <div class="details">
+              <p class="title">Grocery</p>
+              <p class="date">July 28, 2025</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="amount sent" style="color: #FF2600;">
+              -R 98,500
+            </div>
+          </div>
+        </div>
+
+        <div class="transaction-item">
+          <div class="left">
+            <div class="icon sent">
+              <!--<i class="ri-arrow-right-up-long-line"></i>-->
+            </div>
+            <div class="details">
+              <p class="title">Netflix</p>
+              <p class="date">July 28, 2025</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="amount sent" style="color: #FF2600;">
+              -R 60.00
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="quick-action">
+        <div class="section-header">
+          <h2>Quick Action</h2>
+          <a href="#">See All</a>
+        </div>
+        <div class="action-list">
+          <div class="action-item">
+            <a href="send.html" class="icon-action">
+              <i class="ri-arrow-right-up-long-line"></i>
+              <!--<p>Send Money</p>-->
+            </a>
+          </div>
+          <div class="action-item">
+            <div class="icon-action">
+              <i class="ri-arrow-left-down-long-line"></i>
+              <!--<p>Request</p>-->
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="icon-action">
+              <i class="ri-bill-line"></i>
+              <!--<p>Pay Bills</p>-->
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="icon-action">
+              <i class="ri-receipt-line"></i>
+              <!--<p>Create Invoice</p>-->
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="icon-action">
+              <i class="ri-hand-coin-line"></i>
+              <!--<p>Transfer Funds</p>-->
+            </div>
+          </div>
+          <div class="action-item">
+            <div class="icon-action">
+              <i class="ri-pie-chart-line"></i>
+              <!--<p>Statistics</p>-->
+            </div>
+          </div>
+      </section>
+    
+  </main>
+  <script src="script.js">
+    /*// Balance toggle functionality
+    const balanceElement = document.querySelector('.balance h2');
+    const showBtn = document.querySelector('.unhidden-balance');
+    const hideBtn = document.querySelector('.hidden-balance');
+
+    showBtn.addEventListener('click', () => {
+        balanceElement.textContent = 'R *******';
+        showBtn.style.display = 'none';
+        hideBtn.style.display = 'block';
+    });
+
+    hideBtn.addEventListener('click', () => {
+        balanceElement.textContent = 'R 248,450.32';
+        hideBtn.style.display = 'none';
+        showBtn.style.display = 'block';
+    });
+
+    // Quick actions functionality (basic alerts for demonstration)
+    const actionItems = document.querySelectorAll('.action-item');
+
+    actionItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const actionText = item.querySelector('p').textContent;
+            alert(`You clicked: ${actionText}`);
+        });
+    });*/
+  </script>
+</body>
+</html>

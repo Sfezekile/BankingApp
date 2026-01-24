@@ -1,0 +1,100 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #95B1EE 0%, #FFFDF5 100%);
+    height: 100vh;
+    gap: 2px !important;
+}
+
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.logo {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 100%;
+}
+.logo h2 {
+    font-family: var(--font-family);
+    font-size: 44px;
+    color: var(--white-color);
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color-1);
+}
+.login-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.login-box p {
+    font-size: 14px;
+    margin-bottom: 2vh;
+}
+.login-box form {
+    displaY: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+}
+.input-box {
+    margin: 5px 0;
+    padding: 10px;
+    width: 40vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+.input-box input {
+    width: 90%;
+    height: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.icon-psw {
+    font-size: 22px;
+    color: rgba(83, 82, 82, 0.836);
+}
+.btn {
+    margin-top: 10px;
+    width: 40vh;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: var(--white-color);
+    background-color: var(--accent-color-1);
+    font-size: 20px;
+}
+.login-register a, .remember-forgot a {
+    color: var(--white-color);
+    font-weight: 500;
+    text-decoration: none;
+}
